@@ -1,0 +1,1107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- TODO:
+        1) TAB INDEXES
+            - и обработать нажатия на клавиши, если элементы в фокусе
+
+    осталось
+    адаптив до 900
+
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Finom Home">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Finom Home</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/slider.min.css" />
+
+    <script src="./js/slider.min.js" defer></script>
+    <script src="./js/index.js" defer onload="finom.init()"></script>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="container--without-overflow container--wide-padding">
+            <div class="header-wrapper d-f jc-sb ai-c">
+                <a href="https://www.linkedin.com/in/alyasovyan"
+                   class="header__link"
+                   target="_blank"
+                   aria-label="Back to Finom main page"
+                >
+                    <svg class="icon icon__logo">
+                        <use href="#logo"></use>
+                    </svg>
+                </a>
+                <div class="header-actions d-f jc-sb ai-c">
+                    <div class="header__action language">
+                        <div class="language-action d-f jc-sb ai-c">
+                            <span class="language__value d-b mr-2 text-xs-medium choosen--language">DE</span>
+                            <svg class="icon icon__arrow icon--8">
+                                <use href="#arrow"></use>
+                            </svg>
+                        </div>
+                        <div class="language-popup">
+                            <span class="language-popup__title d-b mb-14">Languages</span>
+                            <ul class="language-list">
+                                <li class="language-item d-f ai-c mb-12">
+                                    <a href="/IT"
+                                       class="language__link link--absolute-position"
+                                       aria-label="Choose Italian language"
+                                    ></a>
+                                    <svg class="icon icon--30 mr-6">
+                                        <use href="#italian"></use>
+                                    </svg>
+                                    <span class="language__value" data-language="IT">Italian</span>
+                                </li>
+                                <li class="language-item d-f ai-c mb-12">
+                                    <a href="/GE"
+                                       class="language__link link--absolute-position"
+                                       aria-label="Germany Italian language"
+                                    ></a>
+                                    <svg class="icon icon--30 mr-6">
+                                        <use href="#germany"></use>
+                                    </svg>
+                                    <span class="language__value" data-language="DE">Germany</span>
+                                </li>
+                                <li class="language-item d-f ai-c">
+                                    <a href="/FR"
+                                       class="language__link link--absolute-position"
+                                       aria-label="French Italian language"
+                                    ></a>
+                                    <svg class="icon icon--30 mr-6">
+                                        <use href="#french"></use>
+                                    </svg>
+                                    <span class="language__value" data-language="FR">French</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__action auth__action ml-5">
+                        <a href="https://www.linkedin.com/in/alyasovyan"
+                           class="auth__link bottom-border--animated"
+                           target="_blank"
+                           aria-label="Sign in or sign up"
+                        >
+                            <span>Sign in</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main mb-60">
+        <section class="section main-info-section main-info">
+            <div class="main-info-wrapper text-align-c">
+                <h1 class="title main__title heading-1 letter-spacing--2 mb-24">More than just a&nbsp;business&nbsp;account</h1>
+                <h2 class="title sub__title heading-3-regular mb-40">IBAN account opened online for SMEs, Freelancers and companies under Registration</h2>
+                <a href="https://www.linkedin.com/in/alyasovyan"
+                   target="_blank"
+                   class="button button__xl button__coral button--animated"
+                   aria-label="Sign in or sign up"
+                >
+                    <span class="text-s-bold">Try now</span>
+                </a>
+            </div>
+            <div class="main-info-background">
+                <picture class="main-info-picture">
+                    <source
+                        media="(min-width: 900px)"
+                        srcset="/img/content-icons/demo/demo@1x.avif, /img/content-icons/demo/demo@2x.avif 2x"
+                        type="image/avif">
+                    <source
+                        media="(min-width: 900px)"
+                        srcset="/img/content-icons/demo/demo@1x.webp, /img/content-icons/demo/demo@2x.webp 2x"
+                        type="image/webp">
+                    <img
+                        class="demo__image"
+                        src="/img/content-icons/demo/demo@1x.png"
+                        srcset="/img/content-icons/demo/demo@2x.png 2x"
+                        alt="Demo Finom account image"
+                    />
+                </picture>
+            </div>
+            <div class="main-line-background">
+                <picture class="main-line-picture">
+                    <source
+                        media="(min-width: 900px)"
+                        srcset="/img/content-icons/demo-bg/demo-bg@1x.avif, /img/content-icons/demo-bg/demo-bg@2x.avif 2x"
+                        type="image/avif">
+                    <source
+                        media="(min-width: 900px)"
+                        srcset="/img/content-icons/demo-bg/demo-bg@1x.webp, /img/content-icons/demo-bg/demo-bg@2x.webp 2x"
+                        type="image/webp">
+                    <img
+                        class="demo-bg__image"
+                        src="/img/content-icons/demo-bg/demo-bg@1x.png"
+                        srcset="/img/content-icons/demo-bg/demo-bg@2x.png 2x"
+                        alt="Demo Finom account image"
+                    />
+                </picture>
+            </div>
+        </section>
+        <div class="container">
+            <section class="section mb-24 manage-section section--white-bc">
+                <div class="manage-section-wrapper text-align-c">
+                    <h2 class="title heading-2 letter-spacing--2 mb-24">Manage your finances like a pro</h2>
+                    <h3 class="title heading-3-regular mb-32">Control expenses and simplify accounting</h3>
+                    <a href="https://www.linkedin.com/in/alyasovyan"
+                       target="_blank"
+                       class="button button--with-icon button__dark opacity--animated"
+                       aria-label="Redirect to Learn more Page"
+                    >
+                        <span class="d-b mr-6">Learn more</span>
+                        <svg class="icon icon__button-arrow">
+                            <use href="#button__arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+                <ul class="grid productivity-list gap--23">
+                    <li class="productivity-item item-1">
+                        <h3 class="title productivity__text text-m-medium letter-spacing--2">Enjoy full visibility in customizable dashboard</h3>
+                        <picture>
+                            <source
+                                media="(min-width: 900px)"
+                                srcset="/img/content-icons/schema/schema@1x.avif, /img/content-icons/schema/schema@2x.avif 2x"
+                                type="image/avif">
+                            <source
+                                media="(min-width: 900px)"
+                                srcset="/img/content-icons/schema/schema@1x.webp, /img/content-icons/schema/schema@2x.webp 2x"
+                                type="image/webp">
+                            <img
+                                class="icon__schema"
+                                width="238"
+                                height="139"
+                                src="/img/content-icons/schema/schema@1x.png"
+                                srcset="/img/content-icons/schema/schema@2x.png 2x"
+                                alt="Enjoy full visibility in customizable dashboard - icon with schema"
+                            />
+                        </picture>
+                    </li>
+                    <li class="productivity-item item-2 text-align-c d-f fd-c jc-c ai-c">
+                        <h3 class="title productivity__text text-m-medium letter-spacing--2 mb-10">Transactions tracking</h3>
+                        <span class="productivity__text text-s-regular letter-spacing--2">with real-time notifications</span>
+                    </li>
+                    <li class="productivity-item item-3 text-align-c">
+                        <h3 class="title productivity__text text-m-medium letter-spacing--2">Issue, top-up or limit cards for employees in clicks</h3>
+                        <picture>
+                            <source
+                                media="(min-width: 900px)"
+                                srcset="/img/content-icons/card/card@1x.avif, /img/content-icons/card/card@2x.avif 2x"
+                                type="image/avif">
+                            <source
+                                media="(min-width: 900px)"
+                                srcset="/img/content-icons/card/card@1x.webp, /img/content-icons/card/card@2x.webp 2x"
+                                type="image/webp">
+                            <img
+                                class="icon__card"
+                                width="305"
+                                height="412"
+                                src="/img/content-icons/card/card@1x.png"
+                                srcset="/img/content-icons/card/card@2x.png 2x"
+                                alt="Issue, top-up or limit cards for employees in clicks - icon with card"
+                            />
+                        </picture>
+                    </li>
+                    <li class="productivity-item item-4 text-align-c">
+                        <picture>
+                            <source
+                                media="(min-width: 900px)"
+                                srcset="/img/content-icons/autodoc/autodoc@1x.avif, /img/content-icons/autodoc/autodoc@2x.avif 2x"
+                                type="image/avif">
+                            <source
+                                media="(min-width: 900px)"
+                                srcset="/img/content-icons/autodoc/autodoc@1x.webp, /img/content-icons/autodoc/autodoc@2x.webp 2x"
+                                type="image/webp">
+                            <img
+                                class="icon__autodoc"
+                                width="112"
+                                height="104"
+                                src="/img/content-icons/autodoc/autodoc@1x.png"
+                                srcset="/img/content-icons/autodoc/autodoc@2x.png 2x"
+                                alt="Automated VAT extraction - icon describe autodocs service"
+                            />
+                        </picture>
+                        <h3 class="title productivity__text text-m-medium letter-spacing--2">Automated VAT&nbsp;extraction</h3>
+                    </li>
+                    <li class="productivity-item item-5">
+                        <h3 class="title productivity__text text-m-medium letter-spacing--2">Take a picture and attach bills with a tap</h3>
+                        <picture>
+                            <source
+                                media="(min-width: 900px)"
+                                srcset="/img/content-icons/phone/phone@1x.avif, /img/content-icons/phone/phone@2x.avif 2x"
+                                type="image/avif">
+                            <source
+                                media="(min-width: 900px)"
+                                srcset="/img/content-icons/phone/phone@1x.webp, /img/content-icons/phone/phone@2x.webp 2x"
+                                type="image/webp">
+                            <img
+                                class="icon__phone"
+                                width="112"
+                                height="141"
+                                src="/img/content-icons/phone/phone@1x.png"
+                                srcset="/img/content-icons/phone/phone@2x.png 2x"
+                                alt="Take a picture and attach bills with a tap - icon with phone"
+                            />
+                        </picture>
+                    </li>
+                </ul>
+            </section>
+            <section id="about-us" class="section about-us-section section--white-bc mb-40">
+                <h4 class="title text-m-medium letter-spacing--2 text-transform--uppercase color--coral mb-24">About us</h4>
+                <div class="about-us-wrapper">
+                    <div class="swiper person-info-swaper mb-32">
+                        <ul class="person-info-list swiper-wrapper">
+                            <li class="person-info-item swiper-slide d-f-inline jc-sb ai-c">
+                                <article class="person-article">
+                                    <h3 class="title person__name letter-spacing--2 mb-12">Olivier Binet</h3>
+                                    <span class="person__position letter-spacing--2 d-b mb-12">Head of business in France</span>
+                                    <p class="person__info">20 years of experience in E-Commerce and FinTech, focusing on business development and innovation. Conducts independent coaching for startups development. Lives in Paris, France.</p>
+                                </article>
+                                <blockquote class="person-blockquote">
+                                    We are a team of successful, modern, serial entrepreneurs with vast experience in creating IT solutions. We entered banking to become technological challengers.
+                                </blockquote>
+                            </li>
+                            <li class="person-info-item swiper-slide d-f-inline jc-sb ai-c">
+                                <article class="person-article">
+                                    <h3 class="title person__name letter-spacing--2 mb-12">Alena Valovaya</h3>
+                                    <span class="person__position letter-spacing--2 d-b mb-12">Head of business in Germany</span>
+                                    <p class="person__info">20 years of experience in E-Commerce and FinTech, focusing on business development and innovation. Conducts independent coaching for startups development. Lives in Paris, France.</p>
+                                </article>
+                                <blockquote class="person-blockquote">
+                                    We are a team of successful, modern, serial entrepreneurs with vast experience in creating IT solutions. We entered banking to become technological challengers.
+                                </blockquote>
+                            </li>
+                            <li class="person-info-item swiper-slide d-f-inline jc-sb ai-c">
+                                <article class="person-article">
+                                    <h3 class="title person__name letter-spacing--2 mb-12">Thomas Finan</h3>
+                                    <span class="person__position letter-spacing--2 d-b mb-12">Head of business in Poland</span>
+                                    <p class="person__info">20 years of experience in E-Commerce and FinTech, focusing on business development and innovation. Conducts independent coaching for startups development. Lives in Paris, France.</p>
+                                </article>
+                                <blockquote class="person-blockquote">
+                                    We are a team of successful, modern, serial entrepreneurs with vast experience in creating IT solutions. We entered banking to become technological challengers.
+                                </blockquote>
+                            </li>
+                            <li class="person-info-item swiper-slide d-f-inline jc-sb ai-c">
+                                <article class="person-article">
+                                    <h3 class="title person__name letter-spacing--2 mb-12">Ivo Dimitrov</h3>
+                                    <span class="person__position letter-spacing--2 d-b mb-12">Head of business in Serbia</span>
+                                    <p class="person__info">20 years of experience in E-Commerce and FinTech, focusing on business development and innovation. Conducts independent coaching for startups development. Lives in Paris, France.</p>
+                                </article>
+                                <blockquote class="person-blockquote">
+                                    We are a team of successful, modern, serial entrepreneurs with vast experience in creating IT solutions. We entered banking to become technological challengers.
+                                </blockquote>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper pagination-swaper">
+                        <ul class="person-list swiper-wrapper">
+                            <li class="person swiper-slide">
+                                <p class="person-name">
+                                    <span class="person__firstname d-b">Olivier</span>
+                                    <span class="person__lastname d-b">Binet</span>
+                                </p>
+                                <picture>
+                                    <source
+                                        media="(min-width: 900px)"
+                                        srcset="/img/person/olivier/olivier@1x.avif, /img/person/olivier/olivier@2x.avif 2x"
+                                        type="image/avif">
+                                    <source
+                                        media="(min-width: 900px)"
+                                        srcset="/img/person/olivier/olivier@1x.webp, /img/person/olivier/olivier@2x.webp 2x"
+                                        type="image/webp">
+                                    <img
+                                        class="person__image"
+                                        width="280"
+                                        height="316"
+                                        src="/img/person/olivier/olivier@1x.png"
+                                        srcset="/img/person/olivier/olivier@2x.png 2x"
+                                        alt="Image of Olivier Binet"
+                                    />
+                                </picture>
+                            </li>
+                            <li class="person swiper-slide">
+                                <p class="person-name">
+                                    <span class="person__firstname d-b">Alena</span>
+                                    <span class="person__lastname d-b">Valovaya</span>
+                                </p>
+                                <picture>
+                                    <source
+                                        media="(min-width: 900px)"
+                                        srcset="/img/person/alena/alena@1x.avif, /img/person/alena/alena@2x.avif 2x"
+                                        type="image/avif">
+                                    <source
+                                        media="(min-width: 900px)"
+                                        srcset="/img/person/alena/alena@1x.webp, /img/person/alena/alena@2x.webp 2x"
+                                        type="image/webp">
+                                    <img
+                                        class="person__image"
+                                        width="280"
+                                        height="316"
+                                        src="/img/person/alena/alena@1x.png"
+                                        srcset="/img/person/alena/alena@2x.png 2x"
+                                        alt="Image of Alena Valovaya"
+                                    />
+                                </picture>
+                            </li>
+                            <li class="person swiper-slide">
+                                <p class="person-name">
+                                    <span class="person__firstname d-b">Thomas</span>
+                                    <span class="person__lastname d-b">Finan</span>
+                                </p>
+                                <picture>
+                                    <source
+                                        media="(min-width: 900px)"
+                                        srcset="/img/person/thomas/thomas@1x.avif, /img/person/thomas/thomas@2x.avif 2x"
+                                        type="image/avif">
+                                    <source
+                                        media="(min-width: 900px)"
+                                        srcset="/img/person/thomas/thomas@1x.webp, /img/person/thomas/thomas@2x.webp 2x"
+                                        type="image/webp">
+                                    <img
+                                        class="person__image"
+                                        width="280"
+                                        height="316"
+                                        src="/img/person/thomas/thomas@1x.png"
+                                        srcset="/img/person/thomas/thomas@2x.png 2x"
+                                        alt="Image of Thomas Finan"
+                                    />
+                                </picture>
+                            </li>
+                            <li class="person swiper-slide">
+                                <p class="person-name">
+                                    <span class="person__firstname d-b">Ivo</span>
+                                    <span class="person__lastname d-b">Dimitrov</span>
+                                </p>
+                                <picture>
+                                    <source
+                                        media="(min-width: 900px)"
+                                        srcset="/img/person/ivo/ivo@1x.avif, /img/person/ivo/ivo@2x.avif 2x"
+                                        type="image/avif">
+                                    <source
+                                        media="(min-width: 900px)"
+                                        srcset="/img/person/ivo/ivo@1x.webp, /img/person/ivo/ivo@2x.webp 2x"
+                                        type="image/webp">
+                                    <img
+                                        class="person__image"
+                                        width="280"
+                                        height="316"
+                                        src="/img/person/ivo/ivo@1x.png"
+                                        srcset="/img/person/ivo/ivo@2x.png 2x"
+                                        alt="Image of Ivo Dimitrov"
+                                    />
+                                </picture>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container container--wide-padding">
+            <div class="footer-wrapper d-f">
+                <div class="footer-actions">
+                    <a href="https://www.linkedin.com/in/alyasovyan"
+                       class="footer__link d-b mb-32"
+                       target="_blank"
+                       aria-label="Back to Finom main page"
+                    >
+                        <svg class="icon icon__logo">
+                            <use href="#logo"></use>
+                        </svg>
+                    </a>
+                    <div class="footer__action language">
+                        <div class="language-action d-f ai-c">
+                            <span class="language__value d-b mr-2 text-xs-medium choosen--language">DE</span>
+                            <svg class="icon icon__arrow icon--8">
+                                <use href="#arrow"></use>
+                            </svg>
+                        </div>
+                        <div class="language-popup">
+                            <span class="language-popup__title d-b mb-14">Languages</span>
+                            <ul class="language-list">
+                                <li class="language-item d-f ai-c mb-12">
+                                    <a href="/IT"
+                                       class="language__link link--absolute-position"
+                                       aria-label="Italian Italian language"
+                                    ></a>
+                                    <svg class="icon icon--30 mr-6">
+                                        <use href="#italian"></use>
+                                    </svg>
+                                    <span class="language__value" data-language="IT">Italian</span>
+                                </li>
+                                <li class="language-item d-f ai-c mb-12">
+                                    <a href="/GE"
+                                       class="language__link link--absolute-position"
+                                       aria-label="Germany Italian language"
+                                    ></a>
+                                    <svg class="icon icon--30 mr-6">
+                                        <use href="#germany"></use>
+                                    </svg>
+                                    <span class="language__value" data-language="DE">Germany</span>
+                                </li>
+                                <li class="language-item d-f ai-c">
+                                    <a href="/FR"
+                                       class="language__link link--absolute-position"
+                                       aria-label="French Italian language"
+                                    ></a>
+                                    <svg class="icon icon--30 mr-6">
+                                        <use href="#french"></use>
+                                    </svg>
+                                    <span class="language__value" data-language="FR">French</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav class="footer-navigation">
+                    <ul class="footer-navigation-list grid gap--24">
+                        <li class="footer-navigation-item">
+                            <h4 class="title heading-4 footer-navigation__title mb-14">Products</h4>
+                            <ul class="footer-navigation-item__list">
+                                <li class="footer-navigation-item mb-8">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                        class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                        target="_blank"
+                                        aria-label="Redirecting to Banking Page"
+                                    >Banking</a>
+                                </li>
+                                <li class="footer-navigation-item mb-8">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                        class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                        target="_blank"
+                                        aria-label="Redirecting to Cards Page"
+                                    >Cards</a>
+                                </li>
+                                <li class="footer-navigation-item mb-8">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                        class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                        target="_blank"
+                                        aria-label="Redirecting to Invoicing Page"
+                                    >Invoicing</a>
+                                </li>
+                                <li class="footer-navigation-item">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                       class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                       target="_blank"
+                                       aria-label="Redirecting to Multi-banking Page"
+                                    >Multi-banking</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer-navigation-item">
+                            <h4 class="title heading-4 footer-navigation__title mb-14 opacity-0" aria-label="Products">Products</h4>
+                            <ul class="footer-navigation-item__list">
+                                <li class="footer-navigation-item mb-8">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                       class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                       aria-label="Redirecting to Expense management Page"
+                                       target="_blank"
+                                    >Expense management</a>
+                                </li>
+                                <li class="footer-navigation-item mb-8">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                       class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                       aria-label="Redirecting to Apple Pay Page"
+                                       target="_blank"
+                                    >Apple Pay</a>
+                                </li>
+                                <li class="footer-navigation-item mb-8">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                       class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                       target="_blank"
+                                       aria-label="Redirecting to Cashback Page"
+                                    >Cashback</a>
+                                </li>
+                                <li class="footer-navigation-item">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                       class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                       aria-label="Redirecting to Launch your business Page"
+                                       target="_blank"
+                                    >Launch your business</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer-navigation-item">
+                            <h4 class="title heading-4 footer-navigation__title mb-14">Help</h4>
+                            <ul class="footer-navigation-item__list">
+                                <li class="footer-navigation-item mb-8">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                       class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                       aria-label="Redirecting to FAQ Page"
+                                       target="_blank"
+                                    >FAQ</a>
+                                </li>
+                                <li class="footer-navigation-item mb-8">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                       class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                       aria-label="Redirecting to Contact us Page"
+                                       target="_blank"
+                                    >Contact us</a>
+                                </li>
+                                <li class="footer-navigation-item mb-8">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                       class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                       aria-label="Redirecting to Legal documents Page"
+                                       target="_blank"
+                                    >Legal documents</a>
+                                </li>
+                                <li class="footer-navigation-item">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                       class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                       aria-label="Redirecting to Help center Page"
+                                       target="_blank"
+                                    >Help center</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer-navigation-item">
+                            <h4 class="title heading-4 footer-navigation__title mb-14">Company</h4>
+                            <ul class="footer-navigation-item__list">
+                                <li class="footer-navigation-item mb-8">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                       class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                       aria-label="Redirecting to About us Page"
+                                       target="_blank"
+                                    >About us</a>
+                                </li>
+                                <li class="footer-navigation-item mb-8">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                       class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                       aria-label="Redirecting to Partners Page"
+                                       target="_blank"
+                                    >Partners</a>
+                                </li>
+                                <li class="footer-navigation-item mb-8">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                       class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                       aria-label="Redirecting to Press Page"
+                                       target="_blank"
+                                    >Press</a>
+                                </li>
+                                <li class="footer-navigation-item">
+                                    <a href="https://www.linkedin.com/in/alyasovyan"
+                                       class="footer-navigation__link bottom-border--animated text-xs-regular"
+                                       aria-label="Redirecting to Research Page"
+                                       target="_blank"
+                                    >Research</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="store-list">
+                    <li class="store-item d-f jc-c ai-c mb-12">
+                        <a href="https://www.linkedin.com/in/alyasovyan"
+                           class="store__link link--absolute-position"
+                           target="_blank"
+                           aria-label="Redirecting to App Page in Google Play"
+                        ></a>
+                        <svg class="icon icon__google icon--16 mr-6">
+                            <use href="#google-play"></use>
+                        </svg>
+                        <span class="store__name">Google Play</span>
+                    </li>
+                    <li class="store-item d-f jc-c ai-c mb-12">
+                        <a href="https://www.linkedin.com/in/alyasovyan"
+                           class="store__link link--absolute-position"
+                           target="_blank"
+                           aria-label="Redirecting to App Page in App Store"
+                        ></a>
+                        <svg class="icon icon__google icon--16 mr-6">
+                            <use href="#apple-store"></use>
+                        </svg>
+                        <span class="store__name">App Store</span>
+                    </li>
+                    <li class="store-item d-f jc-c ai-c mb-12">
+                        <a href="https://www.linkedin.com/in/alyasovyan"
+                           class="store__link link--absolute-position"
+                           target="_blank"
+                           aria-label="Redirecting to App Page in App Gallery"
+                        ></a>
+                        <svg class="icon icon__google icon--16 mr-6">
+                            <use href="#app-gallery"></use>
+                        </svg>
+                        <span class="store__name">App Gallery</span>
+                    </li>
+                    <li class="store-item d-f jc-c ai-c">
+                        <a href="https://www.linkedin.com/in/alyasovyan"
+                           class="store__link link--absolute-position"
+                           target="_blank"
+                           aria-label="Redirecting to App Page in Galaxy Store"
+                        ></a>
+                        <svg class="icon icon__google icon--16 mr-6">
+                            <use href="#galaxy-store"></use>
+                        </svg>
+                        <span class="store__name">Galaxy Store</span>
+                    </li>
+                </ul>
+            </div>
+            <ul class="security-list grid gap--24 mb-80">
+                <li class="security-item"></li>
+                <li class="security-item">
+                    <img class="icon security__icon mb-15" src="/img/icons/security/psi.svg" width="66" height="37" alt="Industry compliant - PSI icon" />
+                    <h4 class="title security__title text-xs-regular">Industry compliant</h4>
+                </li>
+                <li class="security-item">
+                    <img class="icon security__icon mb-15" src="/img/icons/security/gdpr.png" width="38" height="37" alt="DPR Compliance - icon" />
+                    <h4 class="title security__title text-xs-regular">GDPR Compliance</h4>
+                </li>
+                <li class="security-item">
+                    <img class="icon security__icon mb-15" src="/img/icons/security/tls.svg" width="38" height="37" alt="TLS protocol - icon" />
+                    <h4 class="title security__title text-xs-regular">TLS protocol</h4>
+                </li>
+                <li class="security-item">
+                    <img class="icon security__icon mb-15" src="/img/icons/security/3ds.svg" width="38" height="37" alt="3D Secure - icon" />
+                    <h4 class="title security__title text-xs-regular">3D Secure</h4>
+                </li>
+            </ul>
+            <ul class="footer-pay-list pay-list d-f ai-c gap--24">
+                    <li class="pay-item">
+                        <svg class="icon icon__apple-pay">
+                            <use href="#apple-pay"></use>
+                        </svg>
+                    </li>
+                    <li class="pay-item">
+                        <svg class="icon icon__google-pay">
+                            <use href="#google-pay"></use>
+                        </svg>
+                    </li>
+                    <li class="pay-item">
+                        <svg class="icon icon__paypal">
+                            <use href="#paypal"></use>
+                        </svg>
+                    </li>
+                    <li class="pay-item">
+                        <svg class="icon icon__visa">
+                            <use href="#visa"></use>
+                        </svg>
+                    </li>
+        </ul>
+            <div class="footer-copyright mb-24 d-f jc-sb">
+                <div class="copyright-wrapper">
+                    <p class="footer__copyright text-xs-regular">© 2023 FINOM</p>
+                    <ul class="footer-copyright-list d-f-inline gap--24">
+                        <li class="footer-copyright-item">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="footer-copyright__link bottom-border--animated text-xs-regular"
+                               target="_blank"
+                               aria-label="Redirect to Terms & Conditions Page"
+                            >Terms & Conditions</a>
+                        </li>
+                        <li class="footer-copyright-item">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="footer-copyright__link bottom-border--animated text-xs-regular"
+                               target="_blank"
+                               aria-label="Redirect to Privacy Policy Page"
+                            >Privacy Policy</a>
+                        </li>
+                        <li class="footer-copyright-item">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="footer-copyright__link bottom-border--animated text-xs-regular"
+                               target="_blank"
+                               aria-label="Redirect to Cookie Policy Page"
+                            >Cookie Policy</a>
+                        </li>
+                        <li class="footer-copyright-item">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="footer-copyright__link bottom-border--animated text-xs-regular"
+                               target="_blank"
+                               aria-label="Redirect to Imprint Page"
+                            >Imprint</a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="empowered__logo" src="/img/icons/solaris.svg" width="114" height="40" alt="Empowered by Solaris logo">
+            </div>
+        </div>
+    </footer>
+    <nav class="main-navigation">
+        <div class="navigation-menu__wrapper d-f jc-sb">
+            <ul class="navigation-menu-list grid gap--40">
+                <li class="navigation-menu-item">
+                    <h3 class="title heading-3 mb-24">Product</h3>
+                    <ul class="navigation-menu-item__list">
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Business account Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Business account</span>
+                        </li>
+                        <li class="navigation-menu-item mb-20 bottom-border--animated with--lightning-icon">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Business account Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">International payments</span>
+                        </li>
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Business account Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Expense management</span>
+                        </li>
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Business account Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Launch your business</span>
+                        </li>
+                        <li class="navigation-menu-item bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Multibanking Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Multibanking</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation-menu-item">
+                    <h3 class="title heading-3 mb-24 opacity-0">Product</h3>
+                    <ul class="navigation-menu-item__list">
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Cards Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Cards</span>
+                        </li>
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Invoicing Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Invoicing</span>
+                        </li>
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Cashback Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Cashback</span>
+                        </li>
+                        <li class="navigation-menu-item bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Apple Pay Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Apple Pay</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation-menu-item">
+                    <h3 class="title heading-3 mb-24">Company</h3>
+                    <ul class="navigation-menu-item__list">
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to About us Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">About us</span>
+                        </li>
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Careers Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Careers</span>
+                        </li>
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Partnership Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Partnership</span>
+                        </li>
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Press Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Press</span>
+                        </li>
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Security Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Security</span>
+                        </li>
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Research Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Research</span>
+                        </li>
+                        <li class="navigation-menu-item bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Blog Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Blog</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navigation-menu-item">
+                    <h3 class="title heading-3 mb-24">Help</h3>
+                    <ul class="navigation-menu-item__list">
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to FAQ Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">FAQ</span>
+                        </li>
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Contact us Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Contact us</span>
+                        </li>
+                        <li class="navigation-menu-item mb-20 bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Legal documents Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Legal documents</span>
+                        </li>
+                        <li class="navigation-menu-item bottom-border--animated">
+                            <a href="https://www.linkedin.com/in/alyasovyan"
+                               class="navigation-menu__link link--absolute-position"
+                               target="_blank"
+                               aria-label="Redirecting to Help center Page"
+                            ></a>
+                            <span class="navigation-menu__text text-xs-regular">Help center</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <article class="navigation-menu-article menu-article">
+                <h3 class="title menu-article__title text-l-medium mb-12">Pricing</h3>
+                <h4 class="title menu-article__description text-xs-regular mb-73">Start with our <span class="text-xs-bold">€0</span> freelancer plan</h4>
+                <ul class="menu-article-list">
+                    <li class="menu-article-item bottom-border--animated mb-17 d-f jc-sb ai-c">
+                        <a href="https://www.linkedin.com/in/alyasovyan"
+                           class="menu-article__link link--absolute-position"
+                           target="_blank"
+                           aria-label="Redirecting to Freelancers plans Page"
+                        ></a>
+                        <span class="menu-article__text text-s-regular">Freelancers plans</span>
+                        <svg class="icon">
+                            <use href="#menu-arrow"></use>
+                        </svg>
+                    </li>
+                    <li class="menu-article-item bottom-border--animated d-f jc-sb ai-c">
+                        <a href="https://www.linkedin.com/in/alyasovyan"
+                           class="menu-article__link link--absolute-position"
+                           target="_blank"
+                           aria-label="Redirecting to Companies plans Page"
+                        ></a>
+                        <span class="menu-article__text text-s-regular">Companies plans</span>
+                        <svg class="icon">
+                            <use href="#menu-arrow"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </article>
+        </div>
+        <ul class="main-navigation-list d-f ai-c gap--8">
+            <li class="main-navigation-item navigation-item-hover d-f jc-c ai-c">
+                <a href="https://www.linkedin.com/in/alyasovyan"
+                   class="main-navigation__link link--absolute-position"
+                   target="_blank"
+                   aria-label="Redirecting to Finom Page"
+                ></a>
+                <svg class="icon icon__finom">
+                    <use href="#finom-navigation"></use>
+                </svg>
+            </li>
+            <li class="main-navigation-item d-f jc-c ai-c">
+                <button class="button main-navigation__button navigation-item-hover d-f ai-c"
+                        type="button"
+                        aria-label="Open navigation menu">
+                    <div class="navigation-burger-icon mr-8">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span class="text-xs-bold main-navigation__text">Menu</span>
+                </button>
+                <span class="main-navigation__border"></span>
+                <ul class="navigation-anchor-list d-f jc-sb ai-c">
+                    <li class="navigation-anchor-item navigation-item-hover">
+                        <a href="#about-us"
+                           class="navigation-anchor__link link--absolute-position"
+                           aria-label="Anchor to Get IBAN block"
+                        ></a>
+                        <span class="text-xs-bold main-navigation__text">Get IBAN</span>
+                    </li>
+                    <li class="navigation-anchor-item navigation-item-hover">
+                        <a href="#about-us"
+                           class="navigation-anchor__link link--absolute-position"
+                           aria-label="Anchor to Pay block"
+                        ></a>
+                        <span class="text-xs-bold main-navigation__text">Pay</span>
+                    </li>
+                    <li class="navigation-anchor-item navigation-item-hover">
+                        <a href="#about-us"
+                           class="navigation-anchor__link link--absolute-position"
+                           aria-label="Anchor to Get Paid block"
+                        ></a>
+                        <span class="text-xs-bold main-navigation__text">Get Paid</span>
+                    </li>
+                    <li class="navigation-anchor-item navigation-item-hover">
+                        <a href="#about-us"
+                           class="navigation-anchor__link link--absolute-position"
+                           aria-label="Anchor to Manage Finances block"
+                        ></a>
+                        <span class="text-xs-bold main-navigation__text">Manage Finances</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="main-navigation-item navigation-item-hover d-f jc-c ai-c">
+                <a href="https://www.linkedin.com/in/alyasovyan"
+                   class="main-navigation__link link--absolute-position"
+                   target="_blank"
+                   aria-label="Redirecting to Open account Page"
+                ></a>
+                <span class="text-xs-bold main-navigation__text">Open account</span>
+            </li>
+        </ul>
+    </nav>
+    <div class="support">
+        <button type="button" class="support__button button--animated-scale d-f jc-c ai-c" aria-label="Click here to open support chat">
+            <svg class="icon icon__support">
+                <use href="#support__icon"></use>
+            </svg>
+        </button>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+        <symbol id="logo" xmlns="http://www.w3.org/2000/svg" width="82" height="18" viewBox="0 0 82 18" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.451613 0C0.202194 0 0 0.202194 0 0.451613V3.14839C0 3.39781 0.202193 3.6 0.451612 3.6H11.9086C12.1139 3.6 12.2934 3.46146 12.3455 3.26281L13.0518 0.566033C13.1267 0.279796 12.9108 0 12.6149 0H0.451613ZM3.31981 17.9998H0.451613C0.202194 17.9998 0 17.7976 0 17.5482V7.6514C0 7.40198 0.202194 7.19978 0.451613 7.19978H10.7292C11.025 7.19978 11.241 7.47959 11.166 7.76582L10.4597 10.4626C10.4077 10.6612 10.2282 10.7998 10.0229 10.7998H4.22304C3.97362 10.7998 3.77143 11.002 3.77143 11.2514V17.5482C3.77143 17.7976 3.56923 17.9998 3.31981 17.9998ZM18.7484 0C18.9978 0 19.2 0.202193 19.2 0.451612V17.5484C19.2 17.7978 18.9978 18 18.7484 18H16.0516C15.8022 18 15.6 17.7978 15.6 17.5484V0.451613C15.6 0.202194 15.8022 0 16.0516 0H18.7484Z" fill="#FF4C5C"/>
+            <path d="M35.581 0H38.3484C38.5978 0 38.8 0.202193 38.8 0.451612V17.5481C38.8 17.7974 38.5978 17.9996 38.3484 17.9996H36.5156C36.2465 17.9996 35.9916 17.8798 35.82 17.6726L27.2703 7.3525C27.1353 7.18961 26.8706 7.28503 26.8706 7.49656V17.5484C26.8706 17.7978 26.6684 18 26.419 18H23.6516C23.4022 18 23.2 17.7978 23.2 17.5484V0.451613C23.2 0.202194 23.4022 0 23.6516 0H25.484C25.7529 0 26.0079 0.119876 26.1795 0.327004L34.7297 10.6478C34.8647 10.8107 35.1294 10.7153 35.1294 10.5038V0.451613C35.1294 0.202194 35.3316 0 35.581 0ZM60.4 9C60.4 13.9705 56.3705 18 51.4 18C46.4295 18 42.4 13.9705 42.4 9C42.4 4.02943 46.4295 0 51.4 0C56.3705 0 60.4 4.02943 60.4 9ZM45.9807 9C45.9807 11.993 48.407 14.4193 51.4 14.4193C54.393 14.4193 56.8193 11.993 56.8193 9C56.8193 6.00702 54.393 3.58073 51.4 3.58073C48.407 3.58073 45.9807 6.00702 45.9807 9ZM81.5484 18H78.8516C78.6022 18 78.4 17.7978 78.4 17.5484V7.83582C78.4 7.61939 78.125 7.52694 77.9943 7.69942L73.5399 13.5764C73.2688 13.9342 72.7312 13.9342 72.4601 13.5764L68.0057 7.69942C67.875 7.52694 67.6 7.61939 67.6 7.83582V17.5484C67.6 17.7978 67.3978 18 67.1484 18H64.4516C64.2022 18 64 17.7978 64 17.5484V0.460994C64 0.212315 64.201 0.0104288 64.4498 0.0093853L66.4608 0.0009465C66.6028 0.000350592 66.7368 0.0665879 66.8226 0.179766L72.82 8.09274C72.9104 8.21196 73.0896 8.21196 73.18 8.09274L79.1645 0.196812C79.2498 0.0841648 79.383 0.017988 79.5244 0.017988H81.5484C81.7978 0.017988 82 0.220181 82 0.4696V17.5484C82 17.7978 81.7978 18 81.5484 18Z" fill="#FF4C5C"/>
+        </symbol>
+        <symbol id="arrow" xmlns="http://www.w3.org/2000/svg" width="8" height="9" viewBox="0 0 8 9" fill="none">
+            <path d="M1.71387 3.35718L3.99958 5.64289L6.2853 3.35718" stroke="#0B002E" stroke-linecap="square"/>
+        </symbol>
+        <symbol id="button__arrow" width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.7659 10.8636L16.1296 11.5L17.4023 12.7728L18.0387 12.1364L16.7659 10.8636ZM21.4023 7.5L22.0387 8.1364L22.6751 7.5L22.0387 6.8636L21.4023 7.5ZM18.0387 2.8636L17.4023 2.22721L16.1296 3.5L16.7659 4.1364L18.0387 2.8636ZM18.0387 12.1364L22.0387 8.1364L20.7659 6.8636L16.7659 10.8636L18.0387 12.1364ZM22.0387 6.8636L18.0387 2.8636L16.7659 4.1364L20.7659 8.1364L22.0387 6.8636ZM20.4023 6.6H1.40234V8.4H20.4023V6.6Z" fill="white"/>
+        </symbol>
+        <symbol id="apple-pay" xmlns="http://www.w3.org/2000/svg" width="39" height="24" viewBox="0 0 39 16" fill="none">
+            <path d="M7.32557 2.05006C7.77487 1.49103 8.0958 0.745647 7.99952 0.000267029C7.32557 0.0313245 6.52325 0.435072 6.04186 0.963049C5.62466 1.42891 5.23954 2.20535 5.33582 2.91967C6.10605 3.01284 6.84418 2.6091 7.32557 2.05006ZM7.99952 3.10602C6.90837 3.0439 5.97768 3.69611 5.46419 3.69611C4.95071 3.69611 4.14839 3.13707 3.28189 3.13707C2.15864 3.16813 1.13167 3.75822 0.554004 4.75206C-0.601335 6.70869 0.233076 9.59703 1.38841 11.181C1.93399 11.9574 2.60794 12.827 3.47444 12.796C4.30885 12.7649 4.62978 12.268 5.62466 12.268C6.61953 12.268 6.90837 12.796 7.80696 12.7649C8.70556 12.7338 9.28323 11.9885 9.82881 11.181C10.4707 10.2803 10.7274 9.41069 10.7274 9.37963C10.6953 9.34857 8.9623 8.72742 8.9623 6.80186C8.93021 5.18687 10.3102 4.41043 10.3744 4.37937C9.63625 3.2613 8.41673 3.13707 7.99952 3.10602Z" fill="#0B002E"/>
+            <path d="M17.4361 0.899094C19.8109 0.899094 21.4477 2.48303 21.4477 4.75022C21.4477 7.04848 19.7788 8.63241 17.3719 8.63241H14.7724V12.6388H12.8789V0.899094H17.4361ZM14.7724 7.11059H16.9226C18.5593 7.11059 19.49 6.24098 19.49 4.78128C19.49 3.29052 18.5593 2.45197 16.9226 2.45197H14.7403V7.11059H14.7724ZM21.9291 10.2474C21.9291 8.75664 23.1165 7.82491 25.2346 7.70068L27.6737 7.57645V6.92425C27.6737 5.96146 26.9997 5.40243 25.9086 5.40243C24.8495 5.40243 24.2076 5.89935 24.0472 6.64473H22.3142C22.4105 5.09186 23.7904 3.94273 25.9727 3.94273C28.123 3.94273 29.503 5.02974 29.503 6.76896V12.6699H27.7699V11.2723H27.7378C27.2244 12.2351 26.1011 12.8252 24.9458 12.8252C23.1486 12.8252 21.9291 11.7692 21.9291 10.2474ZM27.6737 9.47096V8.7877L25.4914 8.91193C24.4002 8.97404 23.7904 9.4399 23.7904 10.1853C23.7904 10.9307 24.4323 11.4276 25.3951 11.4276C26.6788 11.4276 27.6737 10.589 27.6737 9.47096ZM31.1076 15.8377V14.4091C31.236 14.4402 31.5569 14.4402 31.6853 14.4402C32.5197 14.4402 32.969 14.0985 33.2578 13.2289C33.2578 13.1979 33.4183 12.7009 33.4183 12.7009L30.209 4.12907H32.1666L34.4131 11.117H34.4452L36.6917 4.12907H38.6173L35.3117 13.1668C34.5415 15.2477 33.675 15.8999 31.8457 15.8999C31.7173 15.8688 31.2681 15.8688 31.1076 15.8377Z" fill="#0B002E"/>
+        </symbol>
+        <symbol id="google-pay" xmlns="http://www.w3.org/2000/svg" width="42" height="24" viewBox="0 0 42 24" fill="none">
+            <g clip-path="url(#clip0_1895_34494)">
+                <path d="M19.3457 11.5693V16.4845H17.7871V4.34618H21.9223C22.92 4.32573 23.884 4.70405 24.5998 5.39642C25.3243 6.04935 25.7333 6.98273 25.7187 7.95847C25.7391 8.9386 25.3316 9.88074 24.5998 10.5351C23.8767 11.2246 22.9843 11.5693 21.9223 11.5678L19.3457 11.5693ZM19.3457 5.84047V10.0779H21.9603C22.5402 10.0955 23.0997 9.8676 23.5028 9.44984C24.3223 8.65376 24.3398 7.34352 23.5437 6.52407C23.5306 6.50947 23.5159 6.49632 23.5028 6.48317C23.104 6.05665 22.5431 5.82294 21.9603 5.83901L19.3457 5.84047Z" fill="#0B002E"/>
+                <path d="M29.3182 7.9032C30.4707 7.9032 31.3807 8.21141 32.0468 8.82782C32.7128 9.44424 33.0473 10.2885 33.0459 11.3607V16.4789H31.5545V15.3264H31.4873C30.8417 16.2759 29.9828 16.7506 28.9106 16.7506C27.9963 16.7506 27.2309 16.4789 26.6144 15.937C26.0156 15.4331 25.6767 14.6852 25.6898 13.9037C25.6898 13.0448 26.0141 12.3612 26.6641 11.8529C27.3141 11.3461 28.1803 11.0904 29.2656 11.0904C30.1917 11.0904 30.9542 11.2599 31.553 11.5988V11.2423C31.556 10.7092 31.3208 10.2023 30.9089 9.86199C30.497 9.48951 29.9594 9.28648 29.4044 9.29378C28.5338 9.29378 27.8443 9.66188 27.336 10.3966L25.963 9.53188C26.7196 8.44658 27.837 7.9032 29.3182 7.9032ZM27.301 13.9373C27.2995 14.3405 27.4909 14.7188 27.818 14.954C28.1628 15.2257 28.5908 15.3688 29.029 15.36C29.6863 15.3586 30.3173 15.0971 30.7833 14.6312C31.3003 14.1447 31.5574 13.5751 31.5574 12.9192C31.071 12.5321 30.3933 12.3379 29.5241 12.3379C28.8902 12.3379 28.3629 12.4912 27.9393 12.7965C27.5128 13.1077 27.301 13.4845 27.301 13.9373Z" fill="#0B002E"/>
+                <path d="M41.6048 8.17688L36.3989 20.1429H34.7892L36.7217 15.9565L33.2979 8.17834H34.9923L37.4667 14.1438H37.5003L39.9075 8.17834H41.6048V8.17688Z" fill="#0B002E"/>
+                <path d="M14.7132 10.4289C14.7132 9.96368 14.6745 9.49846 14.5958 9.03896H8.15137V11.6714H11.8417C11.6885 12.5203 11.1961 13.2703 10.4775 13.7484L12.6805 15.4562C13.9702 14.2666 14.7132 12.5088 14.7132 10.4289Z" fill="#0B002E"/>
+                <path d="M8.153 17.0876C9.99671 17.0876 11.5498 16.4821 12.6821 15.4386L10.4791 13.7309C9.86645 14.146 9.07629 14.3836 8.153 14.3836C6.37084 14.3836 4.8578 13.1826 4.31671 11.5636L2.04785 13.3243C3.20733 15.6304 5.57066 17.0876 8.153 17.0876Z" fill="#0B002E"/>
+                <path d="M4.31608 11.5744C4.02979 10.7256 4.02979 9.80659 4.31608 8.95917V7.19848H2.04723C1.0767 9.12951 1.0767 11.4041 2.04723 13.3351L4.31608 11.5744Z" fill="#0B002E"/>
+                <path d="M8.15443 6.13305C9.12925 6.1173 10.0711 6.48518 10.7754 7.15797L12.7251 5.20833C11.4883 4.04742 9.84927 3.40899 8.153 3.42903C5.56923 3.42903 3.20733 4.88625 2.04785 7.19375L4.31671 8.95444C4.85923 7.33547 6.37227 6.13305 8.15443 6.13305Z" fill="#0B002E"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_1895_34494">
+                    <rect width="41.1429" height="24" fill="white" transform="translate(0.400391)"/>
+                </clipPath>
+            </defs>
+        </symbol>
+        <symbol id="paypal" xmlns="http://www.w3.org/2000/svg" width="56" height="24" viewBox="0 0 56 24" fill="none">
+            <g clip-path="url(#clip0_1895_34495)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59696 4.87607C9.3972 4.87607 11.0639 5.85571 10.8349 8.29207C10.5613 11.1865 9.00916 12.7895 6.56008 12.7959H4.42269C4.11735 12.7959 3.96468 13.0439 3.88834 13.5592L3.47486 16.1864C3.41125 16.5808 3.20769 16.778 2.90871 16.778H0.91763C0.599566 16.778 0.491424 16.5744 0.561398 16.1228L2.20261 5.58217C2.2853 5.06055 2.47614 4.86971 2.83237 4.86971H7.59696V4.87607ZM4.35272 10.5185H5.97484C6.98628 10.4804 7.66058 9.78061 7.73055 8.51472C7.76872 7.73228 7.24073 7.17249 6.40104 7.17885L4.87434 7.18521L4.35272 10.5185ZM16.2419 15.9765C16.4264 15.8111 16.6109 15.7284 16.5854 15.932L16.5218 16.4218C16.49 16.6762 16.5918 16.8098 16.8272 16.8098H18.5956C18.8946 16.8098 19.0409 16.6889 19.1109 16.2309L20.1986 9.39257C20.2559 9.04907 20.1668 8.88367 19.906 8.88367H17.9595C17.7814 8.88367 17.6987 8.97909 17.6541 9.24626L17.5842 9.66611C17.546 9.88239 17.4442 9.92692 17.3552 9.70428C17.0244 8.92184 16.1847 8.57197 15.0078 8.60378C12.2789 8.66103 10.4468 10.7284 10.2496 13.3811C10.0969 15.4358 11.5664 17.0452 13.5066 17.0452C14.9124 17.0388 15.5422 16.6253 16.2419 15.9765ZM14.7598 14.9269C13.5893 14.9269 12.7687 13.9918 12.9404 12.8404C13.1122 11.6954 14.2063 10.7539 15.3832 10.7539C16.56 10.7539 17.3742 11.689 17.2025 12.8404C17.0307 13.9854 15.9366 14.9269 14.7598 14.9269ZM23.6528 8.85823H21.8589C21.49 8.85823 21.3373 9.13176 21.4582 9.47527L23.6846 15.9892L21.5027 19.0871C21.3182 19.348 21.4645 19.5833 21.719 19.5833H23.7355C23.761 19.5833 23.78 19.5897 23.8055 19.5897C24.0218 19.5897 24.219 19.4752 24.3335 19.2907L31.1782 9.47527C31.3881 9.17629 31.2927 8.85823 30.9428 8.85823H29.0344C28.71 8.85823 28.5764 8.98545 28.392 9.25899L25.5357 13.3938L24.2635 9.24626C24.1872 8.99181 24.0027 8.85823 23.6528 8.85823Z" fill="#0B002E"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M38.2903 4.87607C40.0906 4.87607 41.7572 5.85571 41.5282 8.29208C41.2547 11.1865 39.7025 12.7895 37.2534 12.7959H35.116C34.8107 12.7959 34.658 13.0439 34.5817 13.5592L34.1682 16.1864C34.1046 16.5808 33.901 16.778 33.6021 16.778H31.611C31.2929 16.778 31.1848 16.5744 31.2548 16.1228L32.9023 5.58217C32.985 5.06691 33.1759 4.86971 33.5321 4.86971L38.2903 4.87607ZM35.0524 10.5185H36.6746C37.686 10.4804 38.3603 9.78061 38.4303 8.51472C38.4684 7.73228 37.9405 7.17249 37.1008 7.17885L35.5741 7.18521L35.0524 10.5185ZM46.9353 15.9765C47.1198 15.8111 47.3042 15.7284 47.2788 15.932L47.2152 16.4218C47.1834 16.6762 47.2852 16.8098 47.5205 16.8098H49.289C49.5879 16.8098 49.7342 16.689 49.8042 16.2309L50.892 9.39257C50.9492 9.04907 50.8602 8.88367 50.5994 8.88367H48.6592C48.4811 8.88367 48.3984 8.97909 48.3539 9.24627L48.2839 9.66611C48.2457 9.88239 48.1439 9.92692 48.0549 9.70428C47.7241 8.92184 46.8844 8.57197 45.7139 8.60378C42.9849 8.66103 41.1529 10.7284 40.9557 13.3811C40.803 15.4358 42.2725 17.0452 44.2127 17.0452C45.6185 17.0452 46.2483 16.6317 46.9544 15.9829L46.9353 15.9765ZM45.4595 14.9269C44.289 14.9269 43.4684 13.9918 43.6402 12.8404C43.8119 11.6954 44.906 10.7539 46.0829 10.7539C47.2534 10.7539 48.074 11.689 47.9022 12.8404C47.7304 13.9854 46.6299 14.9269 45.4595 14.9269ZM53.6083 16.8162H51.5663C51.5599 16.8162 51.5599 16.8162 51.5536 16.8162C51.42 16.8162 51.3118 16.708 51.3118 16.5744C51.3118 16.5617 51.3118 16.549 51.3118 16.5426L53.1057 5.18778C53.1439 5.02874 53.2838 4.91424 53.4429 4.91424H55.4848C55.4912 4.91424 55.4912 4.91424 55.4976 4.91424C55.6311 4.91424 55.7393 5.02238 55.7393 5.15597C55.7393 5.16869 55.7393 5.18141 55.7393 5.18778L53.9454 16.5426C53.9136 16.7017 53.7736 16.8162 53.6083 16.8162Z" fill="#0B002E"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_1895_34495">
+                    <rect width="55.2" height="24" fill="white" transform="translate(0.542969)"/>
+                </clipPath>
+            </defs>
+        </symbol>
+        <symbol id="visa" xmlns="http://www.w3.org/2000/svg" width="37" height="24" viewBox="0 0 37 24" fill="none">
+            <g clip-path="url(#clip0_1895_34496)">
+                <path d="M16.3505 17.8053H13.413L15.2489 6.52243H18.1867L16.3505 17.8053ZM10.9417 6.52243L8.14122 14.2829L7.80983 12.6118L7.81014 12.6124L6.82171 7.53833C6.82171 7.53833 6.70219 6.52243 5.42825 6.52243H0.798467L0.744141 6.71348C0.744141 6.71348 2.15994 7.00805 3.81688 8.00312L6.36899 17.8056H9.42965L14.1032 6.52243H10.9417ZM34.0469 17.8053H36.7441L34.3924 6.52213H32.0311C30.9406 6.52213 30.675 7.36298 30.675 7.36298L26.2939 17.8053H29.3561L29.9685 16.1294H33.7028L34.0469 17.8053ZM30.8145 13.8142L32.3579 9.59185L33.2262 13.8142H30.8145ZM26.5236 9.23571L26.9428 6.81277C26.9428 6.81277 25.6493 6.32082 24.3008 6.32082C22.843 6.32082 19.3813 6.95795 19.3813 10.056C19.3813 12.9709 23.4442 13.0071 23.4442 14.5382C23.4442 16.0693 19.7999 15.795 18.5972 14.8295L18.1604 17.3629C18.1604 17.3629 19.4721 18 21.4761 18C23.4808 18 26.5049 16.9621 26.5049 14.1371C26.5049 11.2035 22.4054 10.9304 22.4054 9.65493C22.4057 8.37917 25.2666 8.54306 26.5236 9.23571Z" fill="#0B002E"/>
+                <path d="M7.80917 12.61L6.82073 7.53594C6.82073 7.53594 6.70122 6.52004 5.42727 6.52004H0.79749L0.743164 6.71109C0.743164 6.71109 2.96842 7.17226 5.10283 8.90012C7.14367 10.5516 7.80917 12.61 7.80917 12.61Z" fill="#0B002E"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_1895_34496">
+                    <rect width="36.001" height="23.6792" fill="white" transform="translate(0.743164 0.320822)"/>
+                </clipPath>
+            </defs>
+        </symbol>
+        <symbol id="google-play" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.04006 1.42147L8.61047 7.99195L2.03649 14.566C2.01597 14.4919 2.00488 14.413 2.00488 14.3304V1.6696C2.00488 1.58226 2.01725 1.49917 2.04006 1.42147ZM2.57691 0.853093L9.16308 7.43933L11.229 5.37341L3.29895 0.912769C3.06163 0.779277 2.80139 0.770826 2.57691 0.853093ZM11.9363 5.77129L9.71569 7.99195L11.9466 10.2229L14.553 8.75682C15.1431 8.42485 15.1431 7.57513 14.553 7.24316L11.9363 5.77129ZM11.2393 10.6208L9.16308 8.54457L2.56521 15.1425C2.79232 15.2294 3.0575 15.223 3.29895 15.0872L11.2393 10.6208Z" fill="#0B002E"/>
+        </symbol>
+        <symbol id="apple-store" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+            <path d="M9.10627 2.05311C10.0506 0.806067 11.3634 0.799988 11.3634 0.799988C11.3634 0.799988 11.5587 1.97242 10.6205 3.10185C9.61887 4.30782 8.48032 4.11049 8.48032 4.11049C8.48032 4.11049 8.26653 3.16203 9.10627 2.05311ZM8.60042 4.93177C9.08622 4.93177 9.98784 4.26269 11.1614 4.26269C13.1816 4.26269 13.9763 5.70293 13.9763 5.70293C13.9763 5.70293 12.4219 6.49916 12.4219 8.43119C12.4219 10.6107 14.3582 11.3618 14.3582 11.3618C14.3582 11.3618 13.0047 15.1788 11.1765 15.1788C10.3368 15.1788 9.68396 14.6119 8.79922 14.6119C7.8976 14.6119 7.00287 15.2 6.42013 15.2C4.75069 15.2 2.6416 11.5792 2.6416 8.6686C2.6416 5.805 4.4268 4.30281 6.10125 4.30281C7.18979 4.30281 8.03451 4.93177 8.60042 4.93177Z" fill="#0B002E"/>
+        </symbol>
+        <symbol id="app-gallery" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.3478 0.800003H11.6421C14.611 0.800003 15.692 1.88103 15.692 4.84994V11.1442C15.692 14.1131 14.6051 15.2 11.6421 15.2H5.3478C2.37889 15.2 1.29199 14.1131 1.29199 11.1442V4.84994C1.29199 1.88103 2.37889 0.800003 5.3478 0.800003ZM7.2631 9.8771L7.4374 9.48934H8.29517L8.46359 9.8771H8.8631L8.03666 7.99705H7.70178L6.87534 9.8771H7.2631ZM8.15221 9.14858H7.57448L7.86237 8.47685L8.15221 9.14858ZM14.09 7.99705H13.7081V9.8771H14.09V7.99705ZM13.2577 9.53634H12.21V9.0722H12.9052V8.72557H12.21V8.34369H13.2166V7.99705H11.834V9.8771H13.2577V9.53634ZM11.5265 7.99705H11.127L10.7118 9.2935L10.2829 7.99705H9.96959L9.54658 9.2935L9.12944 7.99705H8.71818L9.37816 9.88298H9.6915L10.1204 8.64528L10.5493 9.88298H10.8724L11.5265 7.99705ZM6.6795 7.99705H6.29762V9.07612C6.29762 9.38163 6.14682 9.55005 5.86873 9.55005C5.59064 9.55005 5.43985 9.38163 5.43985 9.06437V7.99901H5.05796V9.07416C5.05796 9.60489 5.35368 9.91235 5.86286 9.91235C6.38379 9.91235 6.6795 9.60097 6.6795 9.06241V7.99705ZM4.52724 7.99705H4.14535V8.75494H3.28367V7.99705H2.90178V9.88298H3.28367V9.11333H4.14535V9.88298H4.52724V7.99705ZM6.09982 3.20684C6.09982 4.52679 7.1691 5.60195 8.49493 5.60195C9.81488 5.60195 10.89 4.52483 10.89 3.20684H10.5551C10.5551 4.34074 9.62883 5.26119 8.49493 5.26119C7.36102 5.26119 6.43471 4.34074 6.43471 3.20684H6.09982Z" fill="#0B002E"/>
+        </symbol>
+        <symbol id="galaxy-store" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <g clip-path="url(#clip0_2018_537)">
+                <path d="M6.83415 5.9696L6.80077 6.09995H9.20076L9.16743 5.9696C9.16743 5.32645 8.64409 4.80322 8.00071 4.80322C7.35749 4.80322 6.83415 5.32645 6.83415 5.9696Z" fill="#0B002E"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.952833 5.04554C0.799805 5.68294 0.799805 6.4553 0.799805 8C0.799805 9.54471 0.799805 10.3171 0.952833 10.9545C1.43902 12.9796 3.02021 14.5608 5.04534 15.047C5.68275 15.2 6.4551 15.2 7.9998 15.2C9.54451 15.2 10.3169 15.2 10.9543 15.047C12.9794 14.5608 14.5606 12.9796 15.0468 10.9545C15.1998 10.3171 15.1998 9.54471 15.1998 8C15.1998 6.4553 15.1998 5.68294 15.0468 5.04554C14.5606 3.0204 12.9794 1.43922 10.9543 0.953031C10.3169 0.800003 9.54451 0.800003 7.9998 0.800003C6.4551 0.800003 5.68275 0.800003 5.04534 0.953031C3.02021 1.43922 1.43902 3.0204 0.952833 5.04554ZM10.0711 5.9696L10.1008 6.09995H11.8008L11.3425 10.372C11.2507 11.2408 10.5179 11.9002 9.6441 11.9002H6.35739C5.48357 11.9002 4.75078 11.2408 4.659 10.3719L4.20077 6.09995H5.90077L5.93044 5.9696C5.93044 4.82822 6.85915 3.8997 8.00071 3.8997C9.14232 3.8997 10.0711 4.82822 10.0711 5.9696Z" fill="#0B002E"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_2018_537">
+                    <rect width="16" height="16" fill="white"/>
+                </clipPath>
+            </defs>
+        </symbol>
+        <symbol id="french" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 3 2">
+            <rect width="1" height="2" x="0" fill="#00247d" />
+            <rect width="1" height="2" x="1" fill="#ffffff" />
+            <rect width="1" height="2" x="2" fill="#cf142b" />
+        </symbol>
+        <symbol id="italian" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 3 2">
+            <rect width="1" height="2" x="0" fill="#009246" />
+            <rect width="1" height="2" x="1" fill="#ffffff" />
+            <rect width="1" height="2" x="2" fill="#ce2b37" />
+        </symbol>
+        <symbol id="germany" xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 3 2">
+            <rect width="3" height="0.67" y="0" fill="#000000" />
+            <rect width="3" height="0.67" y="0.67" fill="#ff0000" />
+            <rect width="3" height="0.66" y="1.33" fill="#ffcc00" />
+        </symbol>
+        <symbol id="support__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+            <path d="M23.2008 25.6C23.2008 25.6 19.4298 24.116 16.379 22.9273H3.55077C2.03216 22.9273 0.800781 21.6218 0.800781 20.0115V2.91582C0.800781 1.30558 2.03216 0 3.55077 0H20.45C21.9686 0 23.2 1.30558 23.2 2.91582V17.6393L23.2008 25.6ZM19.8899 16.0145C19.6255 15.6884 19.164 15.6507 18.8562 15.93C18.8322 15.9514 16.4438 18.0753 12 18.0753C7.61135 18.0753 5.18621 15.9667 5.143 15.9283C4.83514 15.6504 4.37487 15.6884 4.11085 16.0137C3.98409 16.17 3.92114 16.3738 3.93602 16.5799C3.95089 16.786 4.04235 16.9772 4.19007 17.111C4.30368 17.2134 7.02007 19.631 12 19.631C16.9807 19.631 19.6971 17.2134 19.8107 17.111C19.9582 16.9773 20.0495 16.7862 20.0643 16.5804C20.0792 16.3745 20.0164 16.1708 19.8899 16.0145Z" fill="white"/>
+            <path d="M23.2008 25.6C23.2008 25.6 19.4298 24.116 16.379 22.9273H3.55077C2.03216 22.9273 0.800781 21.6218 0.800781 20.0115V2.91582C0.800781 1.30558 2.03216 0 3.55077 0H20.45C21.9686 0 23.2 1.30558 23.2 2.91582V17.6393L23.2008 25.6ZM19.8899 16.0145C19.6255 15.6884 19.164 15.6507 18.8562 15.93C18.8322 15.9514 16.4438 18.0753 12 18.0753C7.61135 18.0753 5.18621 15.9667 5.143 15.9283C4.83514 15.6504 4.37487 15.6884 4.11085 16.0137C3.98409 16.17 3.92114 16.3738 3.93602 16.5799C3.95089 16.786 4.04235 16.9772 4.19007 17.111C4.30368 17.2134 7.02007 19.631 12 19.631C16.9807 19.631 19.6971 17.2134 19.8107 17.111C19.9582 16.9773 20.0495 16.7862 20.0643 16.5804C20.0792 16.3745 20.0164 16.1708 19.8899 16.0145Z" fill="white"/>
+        </symbol>
+        <symbol id="finom-navigation" xmlns="http://www.w3.org/2000/svg" width="12" height="17" viewBox="0 0 12 17" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.717448 0C0.487329 0 0.300781 0.186548 0.300781 0.416666V2.91667C0.300781 3.14679 0.487329 3.33333 0.717448 3.33333H10.8088C11 3.33333 11.1666 3.20321 11.213 3.01772L11.838 0.517723C11.9038 0.254745 11.7049 0 11.4338 0H0.717448ZM3.21745 16.6667H0.717448C0.487329 16.6667 0.300781 16.4801 0.300781 16.25V7.08333C0.300781 6.85321 0.487329 6.66667 0.717448 6.66667H9.76712C10.0382 6.66667 10.2371 6.92141 10.1714 7.18439L9.54635 9.68439C9.49998 9.86988 9.33332 10 9.14212 10H4.05078C3.82066 10 3.63411 10.1865 3.63411 10.4167V16.25C3.63411 16.4801 3.44757 16.6667 3.21745 16.6667Z" fill="#F3F2F7"/>
+        </symbol>
+        <symbol id="menu-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="12" viewBox="0 0 19 12" fill="none">
+            <path opacity="0.5" d="M13 1L18 6M18 6L13 11M18 6H0" stroke="#0B002E"/>
+        </symbol>
+    </svg>
+</body>
+</html>
