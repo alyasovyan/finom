@@ -23,9 +23,9 @@ finom = {
     },
 
     anchorClick: function(event) {
-        event.preventDefault(); // Отменяет стандартное действие ссылки
+        event.preventDefault();
         var targetId = event.currentTarget.hash.slice(1);
-        finom.smoothScrollToAnchor(targetId); // Замените 'my-anchor' на ID вашего якоря
+        finom.smoothScrollToAnchor(targetId);
     },
 
     windowScroll: function() {
