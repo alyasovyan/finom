@@ -1004,17 +1004,15 @@ h1, h2, h3, h4, p, figure {
 
 .navigation-anchor-item {
     position: relative;
-    flex: 1;
-    padding: 0 25px;
+    flex-grow: 2;
     white-space: nowrap;
     height: 100%;
     line-height: 48px;
     text-align: center;
 }
 
-.navigation-anchor-item:nth-child(2),
-.navigation-anchor-item:nth-child(3) {
-    padding: 0 17px;
+.navigation-anchor-item:nth-child(2) {
+    flex-grow: 1;
 }
 
 .navigation-anchor-item:last-child {
