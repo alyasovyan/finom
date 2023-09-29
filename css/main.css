@@ -609,6 +609,12 @@ h1, h2, h3, h4, p, figure {
 .main-line-picture {
     position: absolute;
     bottom: -2px;
+    left: 0;
+    right: 0;
+}
+
+.main-line-picture {
+    width: 100%;
 }
 
 .demo__image {
